@@ -5,7 +5,6 @@ var myname = document.getElementById('myname');
 var btn = document.getElementById('send');
 var output = document.getElementById('output');
 var popup = document.getElementById('popup');
-var online = document.getElementById('online');
 
 
 btn.addEventListener('click' , function(){
@@ -30,8 +29,4 @@ socket.on('chatting',function(data){
 
 socket.on('typing',function(data){
   popup.innerHTML = '<p><i>'+data+' is typing a message'+'</i></p>';
-});
-
-socket.on('join',function(data){
-  online.innerHTML += '<p><b>'+data+' is online'+'</b></p>';
 });
