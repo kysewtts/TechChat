@@ -1,0 +1,76 @@
+body{
+  background-image: url('http://2.bp.blogspot.com/-s8fO2n0QV94/Tn941zu3vmI/AAAAAAAAARY/yMsic9Gc6FQ/s1600/amazing+background+wallpaper+1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+#main{
+  width: 1000px;
+  margin: 0 auto;
+}
+#header{
+  width: inherit;
+  border: 1px solid black;
+  background: linear-gradient(to right , rgba(150,0,0,0.1) , rgba(255,255,0,0.5));
+}
+#chatbox{
+  width: inherit;
+  height: 500px;
+  overflow: auto;
+  background: rgba(0,60,155,0.4);
+  border: 1px solid black;
+}
+#output p{
+    padding: 14px 0px;
+    margin: 0 20px;
+    border-bottom: 1px solid #e9e9e9;
+    color: #fff;
+    font-size: 20px;
+}
+
+#disusers p{
+  color: pink;
+  padding: 14px 0px;
+  margin: 0 20px;
+}
+
+#popup p{
+    color: pink;
+    padding: 14px 0px;
+    margin: 0 20px;
+}
+
+#output strong{
+    color: yellow;
+    font-family: Arial;
+    font-size: 24px;
+}
+
+label{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px 20px;
+}
+
+input{
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background: #eee;
+    border: 1px solid black;
+    display: block;
+    width: 1000px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    font-family: Nunito;
+    font-size: 16px;
+}
+
+button{
+    background: #575ed8;
+    color: #fff;
+    font-size: 18px;
+    border: 0;
+    padding: 12px 0;
+    width: 1000px;
+    border: 1px solid black;
+    border-radius: 0 0 2px 2px;
+}
