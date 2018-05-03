@@ -3,14 +3,14 @@ var socket = require('socket.io');
 var bodyParser = require('body-parser');
 
 var app = express();
-var server = app.listen(4000 ,function(){
-  console.log('Server listening at port 4000');
+var server = app.listen(3000 ,function(){
+  console.log('Server listening at port 3000');
 });
 
 app.set('view engine' , 'ejs');
-app.use(express.static('public'));
+app.use(express.static('views'));
 
-
+var i = 0;
 /*app.get('/' , function(req , res){
   res.sendFile('/Users/ujjwalprakash/websockets/public/open.html');
 });
@@ -22,8 +22,11 @@ app.post('/' , parser , function(req,res){
 var io = socket(server);
 io.on('connection' , function(socket){
   console.log('Socket connection made',socket.id);
+  i++;
+  console.log('Number of connected users is: ' + i);
   socket.on('disconnect' , function(){
     console.log('User disconnected with socket id ' , socket.id);
+  i-- ;
   });
 
   socket.on('join' , function(data){
