@@ -1,0 +1,25 @@
+{
+  "name": "techchat",
+  "version": "1.0.0",
+  "description": "A Chat app made with JavaScript and websocket (socket.io).",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kysewtts/TechChat.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kysewtts/TechChat/issues"
+  },
+  "homepage": "https://github.com/kysewtts/TechChat#readme",
+  "dependencies": {
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "socket.io": "^2.1.0"
+  }
+}
