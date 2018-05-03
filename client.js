@@ -12,6 +12,7 @@ btn.addEventListener('click' , function(){
     message: message.value,
     name: myname.value,
   });
+  message.value = "";
 });
 message.addEventListener('input',function(){
   socket.emit('typing',myname.value);
